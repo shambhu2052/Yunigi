@@ -1,33 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.bgaboutus{
+  background-repeat: no-repeat;
+  background-image: url("/../assets/aboutusimage.webp");
+  background-size: cover;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.servicebox ::before{
+  background-color: white;
+  
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.serviceslider{
+  width:95% !important;
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.mainservicebanner{
+  background-image: url('/../assets/servicebg2.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.partnerbanner{
+  background-image: url('/../assets/kv.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.investmentimage{
+  background-image: url('/../assets/investmentbanner.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.newsbanner{
+  background-image: url('/../assets/newsbanner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.companybanner{
+  background-image: url('/../assets/companybanner.webp');
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+.contactbanner{
+  background-image: url('/../assets/contactbanner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
