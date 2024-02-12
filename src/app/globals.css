@@ -15,6 +15,16 @@
 .serviceslider{
   width:95% !important;
 }
+.slick-list{
+  width:100% !important;
+}
+@media (max-width:767px){
+  .slick-list{
+    width:363px !important
+  }
+}
+
+
 .mainservicebanner{
   background-image: url('/../assets/servicebg2.webp');
   background-repeat: no-repeat;
@@ -44,4 +54,31 @@
   background-image: url('/../assets/contactbanner.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+}
+.nav {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  animation: 0.6s ease-out normal both 1 running fixedAnim;
+  -webkit-animation: 0.6s ease 0s normal both 1 running fixedAnim;
+  -moz-animation: 0.6s ease 0s normal both 1 running fixedAnim;
+  -o-animation: 0.6s ease 0s normal both 1 running fixedAnim;
+  
+}
+
+@keyframes fixedAnim {
+  0% {
+    top: -100%;
+  }
+
+  100% {
+    top: 0;
+  }
+}
+.ant-drawer-content-wrapper{
+  width:260px !important;
+  background-color: #F2E9E4;
 }

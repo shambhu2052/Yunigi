@@ -32,7 +32,7 @@ const LinkItems = [
 ];
 const Footer = () => {
   return (
-    <div className="bg-[#ED514E] py-10">
+    <div className="bg-[#ED514E] py-10 px-4 md:px-0">
       <div className="2xl:max-w-[1180px] max-w-[800px] mx-auto">
         <h3 className="font-semibold uppercase text-5xl pt-13 text-center text-white">
           YUNIGE
@@ -43,7 +43,7 @@ const Footer = () => {
         <h3 className="text-center font-normal font-sans text-white text-xl py-12">
           Total Support for business negotiation and travel in japan
         </h3>
-        <div className="flex justify-between items-center my-12">
+        <div className="flex flex-wrap justify-between items-center my-5 md:my-12">
           {LinkItems.map((val: Linktype, index: number) => {
             return (
               <Link

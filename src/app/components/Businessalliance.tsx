@@ -34,8 +34,8 @@ const Industries = [
 const Businessalliance = () => {
   return (
     <div>
-      <div className="2xl:max-w-[1180px] container mx-auto py-5 flex flex-wrap justify-between ">
-        <div className="basis-[47%]">
+      <div className="2xl:max-w-[1180px] container mx-auto py-5 flex flex-wrap gap-3 md:gap-0 md:justify-between px-4 md:px-0">
+        <div className="w-full md:basis-[47%]">
           <h2 className="text-center font-bold text-2xl text-[#333333]">
             Advantage of <br /> business alliance
           </h2>
@@ -72,7 +72,7 @@ const Businessalliance = () => {
             </p>
           </div>
         </div>
-        <div className="basis-[47%]">
+        <div className="w-full md:basis-[47%]">
           <h2 className="text-center font-bold text-2xl text-[#333333]">
             Industries that can <br /> be partnered with
           </h2>
@@ -97,7 +97,7 @@ const Businessalliance = () => {
             })}
           </div>
           <div className="bg-[#F4F4F4] rounded-md p-3 w-full mt-4">
-            <div className="flex justify-around items-center">
+            <div className="flex gap-7 md:gap-0 md:justify-around items-center">
               <img src="/../assets/in3.svg" alt="icons" />
               <h2 className="font-bold text-[18px] text-[#333333]">
                 Activity/ leisure service provider

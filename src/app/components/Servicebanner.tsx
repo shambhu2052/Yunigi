@@ -3,7 +3,7 @@ import React from "react";
 const Servicebanner = () => {
   return (
     <div className="mainservicebanner h-[70vh] relative">
-      <h2 className="text-center font-semibold text-3xl text-white pb-6 pt-[160px] tracking-[3px]">
+      <h2 className="text-center font-semibold text-2xl md:text-3xl text-white pb-6 pt-[89px] md:pt-[160px] tracking-[3px]">
         For those considering international business expansion
       </h2>
       <div className="flex items-center justify-center mt-[5px]">

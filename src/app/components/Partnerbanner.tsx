@@ -28,17 +28,17 @@ const Partnerbanner = () => {
   return (
     <div>
       <div className="partnerbanner h-[70vh] relative">
-        <h2 className="text-center font-bold uppercase text-[33px] text-white pb-6 pt-[160px] tracking-[3px]">
+        <h2 className="text-center font-bold uppercase text-[33px] text-white pb-6  pt-[97px] md:pt-[160px] tracking-[3px]">
           Yunige <span className="lowercase">support</span>
         </h2>
         <div className="flex items-center justify-center mt-[3px]">
           <div className="w-[80px] bg-white h-[2px]"></div>
         </div>
-        <p className="text-center text-white font-normal text-base tracking-[2px] pt-5">
+        <p className="text-center text-white font-normal text-base tracking-[2px] pt-5 px-4 md:px-0">
           We support overseas expansion, which can be time-consuming and costly,
           with a variety of services. We aim for long-term business growth
         </p>
-        <p className="text-center text-white font-normal text-base tracking-[2px] pt-5">
+        <p className="text-center text-white font-normal text-base tracking-[2px] pt-5 px-4 md:px-0">
           through strategies that minimize risk . We promise to help businesses
           from overseas leave their mark on the Japanese market and achieve
           results.
@@ -46,12 +46,12 @@ const Partnerbanner = () => {
       </div>
       <div className="w-full h-[80vh] relative">
         <img src="/../assets/map.webp" alt="map" />
-        <div className="absolute bottom-[-60%] left-[11%] 2xl:left-[19%] max-w-[1050px] mx-auto flex justify-between ">
+        <div className="absolute bottom-[-75%] md:bottom-[-60%] mx-4 md:left-[11%] 2xl:left-[19%] max-w-[1050px] md:mx-auto flex flex-wrap gap-3 md:gap-0  md:justify-between ">
           {network?.map((val: networktype, index: number) => {
             const bgcolor = index % 2 === 1;
             return (
               <div
-                className="basis-[30%] py-3 px-5 rounded-lg bg-white overflow-hidden relative shadow-2xl"
+                className="w-full md:basis-[30%] py-3 px-5 rounded-lg bg-white overflow-hidden relative shadow-2xl"
                 key={index}
               >
                 <div
@@ -73,10 +73,10 @@ const Partnerbanner = () => {
           })}
         </div>
       </div>
-      <div className="w-full mt-[400px] h-[70vh]">
+      <div className="w-full mt-[450px] md:mt-[400px] h-[70vh] ">
         <img
           src="/../assets/bound.webp"
-          className="w-full h-full object-fill"
+          className="w-full h-full object-cover"
         />
       </div>
     </div>

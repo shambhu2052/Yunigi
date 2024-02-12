@@ -75,7 +75,7 @@ class Imageslides extends Component {
       ],
     };
     return (
-      <div className="2xl:max-w-[1180px] container mx-auto my-5">
+      <div className="2xl:max-w-[1180px] container mx-auto my-5 ">
         <Slider {...settings}>
           {services.map((val: servicetype, index: number) => {
             return (

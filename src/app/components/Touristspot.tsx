@@ -91,8 +91,8 @@ const Touristspot = () => {
     console.log(id);
   };
   return (
-    <div className="py-7 2xl:max-w-[1180px] mx-auto container">
-      <h2 className="text-center font-bold text-7xl text-[#f4f4f4]">
+    <div className="py-7 2xl:max-w-[1180px] mx-auto container px-4 md:px-0">
+      <h2 className="text-center font-bold text-4xl md:text-7xl text-[#f4f4f4]">
         SIGHTSEEING SPOT
       </h2>
       <h3 className="font-bold text-3xl text-[#333333] pt-5 text-center">
@@ -106,14 +106,14 @@ const Touristspot = () => {
         there are a variety of tourist attractions worth visiting. We will
         introduce tourist spots recommended for overseas business operators.
       </p>
-      <div className="max-w-[900px] mx-auto flex items-center justify-between mt-9 mb-5">
+      <div className="max-w-[900px] mx-auto flex items-center gap-2 md:justify-between flex-wrap mt-9 mb-5">
         {Linkname?.map((val: linktype, index: number) => {
           const isActive = val?.id === selectedlink;
           return (
             <div
               className={`${
                 isActive ? "bg-[#ed514e] text-white" : "text-[#ed514e]"
-              } px-10 py-3 rounded-3xl border-[1px] border-solid border-[#ED514E] cursor-pointer font-semibold text-base`}
+              } px-6 md:px-10 py-3 rounded-3xl border-[1px] border-solid border-[#ED514E] cursor-pointer font-semibold text-base`}
               onClick={() => handleClick(val?.id)}
             >
               {val?.linkname}
@@ -123,7 +123,7 @@ const Touristspot = () => {
       </div>
       {selectedlink === 1 && (
         <div>
-          <div className="grid grid-cols-3 gap-4 max-w-[1050px] mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-[1050px] mx-auto">
             {koyota?.map((val: imagetype, index: number) => {
               return (
                 <div

@@ -55,7 +55,7 @@ const Feature = () => {
                 <div className="w-full md:basis-[30%] h-[200px] rounded-full shadow-2xl">
                   <img
                     src={val?.serviceimage}
-                    className="w-full h-full rounded-full object-contain"
+                    className="w-[250px] md:w-full h-[250px] md:h-full rounded-full object-contain"
                   />
                 </div>
               </div>
