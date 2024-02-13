@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 const News = () => {
   return (
-    <div className="bg-[#F2E9E4] py-4">
+    <div className="bg-[#F2E9E4] py-4 px-4 md:px-0">
       <div className="2xl:max-w-[1180px] container mx-auto">
         <div className="flex items-center justify-center pt-10 ">
           <div className="w-[100px] h-[5px] bg-[#3D302B] rounded-lg "></div>

@@ -39,7 +39,7 @@ const support = [
 ];
 const Salesupport = () => {
   return (
-    <div className="my-8">
+    <div className="my-8 md:px-0 px-4">
       <div className="flex items-center justify-center">
         <div className="w-[50px] h-[4px] bg-[#333333]"></div>
       </div>
@@ -53,7 +53,7 @@ const Salesupport = () => {
         {support?.slice(0, 3).map((val: supporttype, index: number) => {
           return (
             <div
-              className="w-full md:basis-[30%] bg-[#F4F4F4] p-4 rounded-md relative h-[350px]"
+              className="w-full md:basis-[30%] bg-[#F4F4F4] p-4 rounded-md relative h-[350px] mt-[120px] md:mt-0"
               key={index}
             >
               <img
@@ -76,7 +76,7 @@ const Salesupport = () => {
         {support?.slice(3).map((val: supporttype, index: number) => {
           return (
             <div
-              className="w-full md:basis-[45%] bg-[#F4F4F4] p-4 rounded-md relative h-[350px]"
+              className="w-full md:basis-[45%] bg-[#F4F4F4] p-4 rounded-md relative h-[350px] mt-[100px] md:mt-0"
               key={index}
             >
               <img

@@ -149,7 +149,7 @@ const Touristspot = () => {
       )}
       {selectedlink === 2 && (
         <div>
-          <div className="grid grid-cols-3 gap-4 max-w-[1050px] mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-[1050px] mx-auto">
             {osaka?.map((val: imagetype, index: number) => {
               return (
                 <div
@@ -176,7 +176,7 @@ const Touristspot = () => {
       )}
       {selectedlink === 3 && (
         <div>
-          <div className="grid grid-cols-3 gap-4 max-w-[1050px] mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-[1050px] mx-auto">
             {tokyo?.map((val: imagetype, index: number) => {
               return (
                 <div
@@ -203,7 +203,7 @@ const Touristspot = () => {
       )}
       {selectedlink === 4 && (
         <div>
-          <div className="grid grid-cols-3 gap-4 max-w-[1050px] mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-[1050px] mx-auto">
             {okinwa?.map((val: imagetype, index: number) => {
               return (
                 <div
@@ -230,7 +230,7 @@ const Touristspot = () => {
       )}
       {selectedlink === 5 && (
         <div>
-          <div className="grid grid-cols-3 gap-4 max-w-[1050px] mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-[1050px] mx-auto">
             {ma?.map((val: imagetype, index: number) => {
               return (
                 <div

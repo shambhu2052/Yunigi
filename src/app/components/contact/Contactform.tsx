@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { useFormik,ErrorMessage } from "formik";
+import { useFormik, ErrorMessage } from "formik";
 
 const Contactform = () => {
   const formik = useFormik({
@@ -19,7 +19,7 @@ const Contactform = () => {
     },
   });
   return (
-    <div className="py-7 bg-[#F2E9E4]">
+    <div className="py-7 bg-[#F2E9E4] px-4 md:px-0">
       <div className="max-w-[900px] mx-auto ">
         <div className="flex gap-4 ">
           <div className="w-[300px] h-[2px] bg-[#ED514E]"></div>
@@ -36,7 +36,7 @@ const Contactform = () => {
               Please select the appropriate item from the form below and contact
               us.
             </p>
-            <div className="my-8 w-full">
+            <div className="my-8 w-full md:block hidden">
               <form className="flex gap-4" onSubmit={formik.handleSubmit}>
                 <div className="flex flex-col gap-3">
                   <label>Overseas/domestic</label>
@@ -174,6 +174,149 @@ const Contactform = () => {
                       send
                     </button>
                   </div>
+                </div>
+              </form>
+            </div>
+            <div className="my-8 w-full md:hidden block">
+              <form onSubmit={formik.handleSubmit}>
+                <label>Overseas/domestic</label>
+                <br />
+                <div className="my-3">
+                  <label className="pr-2">
+                    <input
+                      type="radio"
+                      name="domestic"
+                      value="abroad"
+                      className="pl-1"
+                      onChange={formik.handleChange}
+                    />
+                    Abroad
+                  </label>
+                  <label className="pr-2">
+                    <input
+                      type="radio"
+                      name="domestic"
+                      value="domestic"
+                      className="pl-1"
+                      onChange={formik.handleChange}
+                    />
+                    Domestic
+                  </label>
+                  <label className="pr-2">
+                    <input
+                      type="radio"
+                      name="domestic"
+                      value="other"
+                      className="pl-1"
+                      onChange={formik.handleChange}
+                    />
+                    Other
+                  </label>
+                </div>
+                <label>Inquiry field</label>
+                <br />
+                <div className="flex flex-wrap gap-1 my-3">
+                  <label className="pr-2">
+                    <input
+                      type="radio"
+                      name="inquiry"
+                      value=" Those considering enetring the Japnaese market"
+                      className="pl-1"
+                      onChange={formik.handleChange}
+                    />
+                    Those considering enetring the Japnaese market
+                  </label>
+                  <label className="pr-2">
+                    <input
+                      type="radio"
+                      name="inquiry"
+                      value=" For those who wish to travel to japan"
+                      className="pl-1"
+                      onChange={formik.handleChange}
+                    />
+                    For those who wish to travel to japan
+                  </label>
+                  <label className="pr-2">
+                    <input
+                      type="radio"
+                      name="inquiry"
+                      value="other"
+                      className="pl-1"
+                      onChange={formik.handleChange}
+                    />
+                    Those who want to purchase real estate in japan
+                  </label>
+                </div>
+                <label className="pt-[68px]">Name</label>
+                <br />
+                <div className="flex gap-2 my-3">
+                  <input
+                    type="text"
+                    name="firstname"
+                    className="p-2 w-full rounded-md"
+                    placeholder="Enter Firstname"
+                    onChange={formik.handleChange}
+                    value={formik.values.firstname}
+                  />
+                  <input
+                    type="text"
+                    name="lastname"
+                    className="p-2 w-full rounded-md"
+                    placeholder="Enter Lastname"
+                    onChange={formik.handleChange}
+                    value={formik.values.lastname}
+                  />
+                </div>
+                <label className="pt-[4px]">Email Address</label>
+                <br />
+                <div className="w-full my-3">
+                  <input
+                    type="email"
+                    name="email"
+                    className="p-2 w-full outline-none rounded-md"
+                    placeholder="Enter email address"
+                    onChange={formik.handleChange}
+                    value={formik.values.email}
+                  />
+                </div>
+                <label className="pt-[9px]">Address</label>
+                <br />
+                <div className="w-full my-3">
+                  <input
+                    type="text"
+                    name="address"
+                    className="p-2 w-full outline-none rounded-md"
+                    placeholder="Enter  Address"
+                    onChange={formik.handleChange}
+                    value={formik.values.address}
+                  />
+                </div>
+                <label className="py-[20px]">Telephone</label>
+                <br />
+                <div className="w-full my-3">
+                  <input
+                    type="number"
+                    name="mobilenumber"
+                    className="p-2 w-full outline-none rounded-md"
+                    placeholder="Enter Number"
+                    onChange={formik.handleChange}
+                    value={formik.values.mobilenumber}
+                  />
+                </div>
+                <label>Inquiry detail</label>
+                <br />
+                <div className="w-full my-3">
+                  <textarea
+                    className="w-full h-[150px] p-2 "
+                    name="description"
+                    onChange={formik.handleChange}
+                    value={formik.values?.description}
+                  ></textarea>
+                </div>
+                <div className="flex justify-between items-center mt-9 w-full">
+                  <button className="px-9 py-3 border-[1px] border-solid border-[#ED514E] font-normal text-[#333333] text-base hover:bg-[#ED514E] hover:text-white">
+                    send
+                  </button>
                 </div>
               </form>
             </div>

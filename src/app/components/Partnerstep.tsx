@@ -9,14 +9,12 @@ const Partnerstep = () => {
           alt="line"
           className="object-contain absolute z-10 left-4 top-14 md:block hidden"
         />
-
         <div className="flex flex-wrap md:flex-nowrap gap-7">
           <div className="flex item-center justify-center w-full md:basis-[15%] md:justify-start">
             <div className=" flex justify-center items-center bg-[#F2E9E4] w-[150px] h-[150px] rounded-full z-50">
               <img src="/../assets/step1.svg" alt="step" />
             </div>
           </div>
-
           <div className=" text-center md:text-start">
             <h2 className="font-bold text-4xl text-[#333333]">
               01Market{" "}

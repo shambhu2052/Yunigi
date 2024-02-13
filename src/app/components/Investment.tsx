@@ -26,7 +26,7 @@ const investmentitems = [
 ];
 const Investment = () => {
   return (
-    <div className="investmentimage h-[100vh] py-9 px-4 md:px-0">
+    <div className="investmentimage h-full md:h-[100vh] py-9 px-4 md:px-0">
       <div className="max-w-[1180px] container mx-auto">
         <h3 className="text-white font-bold text-xl text-center">
           Why real estate investment in Japan is popular
@@ -44,10 +44,10 @@ const Investment = () => {
             const isLastItem = index === investmentitems.length - 1;
             return (
               <div
-                className={`p-3 flex flex-col gap-3 items-center basis-[32%] ${
+                className={`p-3 flex flex-col gap-3 items-center w-full md:basis-[32%] ${
                   isLastItem
                     ? ""
-                    : "border-r-[1px] border-solid border-[#ed514e]"
+                    : "border-b-[1px] md:border-r-[1px] border-solid border-[#ed514e]"
                 } `}
                 key={index}
               >

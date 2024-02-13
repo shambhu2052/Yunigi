@@ -27,7 +27,7 @@ const companyaddress = [
 const Companyaddress = () => {
   return (
     <div>
-      <div className="max-w-[1180px] container mx-auto  py-10 flex justify-between flex-wrap ">
+      <div className="max-w-[1180px] container mx-auto  py-10 flex justify-between flex-wrap px-4 md:px-0">
         <div className="w-full md:basis-[46%]">
           <div className="flex gap-4">
             <div className="w-[130px] h-[3px] bg-[#ED514E] mt-5"></div>

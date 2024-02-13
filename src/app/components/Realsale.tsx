@@ -3,7 +3,7 @@ import React from "react";
 const Realsale = () => {
   return (
     <div className="px-4 md:px-0 py-7">
-      <h2 className="font-bold text-[69px] text-[#f4f4f4] text-center uppercase">
+      <h2 className="font-bold text-4xl md:text-[69px] text-[#f4f4f4] text-center uppercase">
         Real EATATE SALE
       </h2>
       <p className="pt-3 font-bold text-xl text-black text-center">
